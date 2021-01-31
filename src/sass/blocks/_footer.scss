@@ -1,0 +1,56 @@
+.footer{
+    background-color: #000000;
+    padding: 42px 0;
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__tel{
+        font-size: 19px;
+        font-family: "Century Gothic";
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        line-height: 2.5;
+        text-align: center;
+        transition: all .5s ease-out;
+        &:hover{
+            color: $btnRed;
+        }  
+    }
+    &__logo{
+        width: 109px;
+        height: 88px;
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    &-insta_flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:hover .footer__instaName a{
+            color: $btnRed;
+        }
+        &:hover .footer__instaLogo img{
+            transform: rotate(360deg);
+        }
+    }
+
+    .footer__instaLogo img{
+        transition: all .5s ease-out;
+        transform: rotate(0deg);
+    }
+    .footer__instaName a{
+        font-size: 19px;
+        font-weight: 700;
+        font-family: "Century Gothic";
+        color: rgb(255, 255, 255);
+        line-height: 2.5;
+        text-align: left;
+        margin-left: 20px;
+        transition: all .5s ease-out;
+    }
+}

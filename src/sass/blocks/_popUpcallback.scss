@@ -1,0 +1,103 @@
+.popup{
+    &-callback{
+        width: 464px;
+        min-height: 653px;
+        position: fixed;
+        z-index: 99;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding: 40px 52px 98px 52px;
+        display: block;
+        h3{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        p{
+            text-align: center;
+            font-size: 22px;
+        }
+    }
+    &__label{
+        display: block;
+        text-align-last: left;
+        font-size: 18px;
+        margin-top: 34px;
+    }
+   
+    &__textarea{
+        font-family: inherit;
+        border: 1px solid #000000;
+        margin-top: 8px;
+        width: 100%;
+        min-height: 146px;
+        resize: none;
+        font-size: 15px;
+        font-family: $mainFont;
+        padding: 14px 0 0 17px;
+    }
+    &-close{
+        position: absolute;
+        right: -38px;
+        top: -28px;
+        width: 32px;
+        height: 32px;
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+.input_style{
+    font-family: inherit;
+    border: 1px solid #000000;
+    display: block;
+    width: 358px;
+    height: 43px;
+    padding: 0 0 0 17px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+button.ui-btn {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 362px;
+    height: 56px;
+    position: absolute;
+    left: 50%;
+    bottom: 42px;
+    transform: translateX(-50%);
+    font-family: $mainFont;
+    border-radius: 0px;
+    &:hover{
+        border: 1px solid $btnRed;
+        color: #000;
+    }
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    z-index: 5;
+    display: none;
+    &-active{
+        display: block;
+    }
+}
+
+label.error {
+    margin-top: 8px;
+    display: block;
+    font-family: inherit;
+}
+

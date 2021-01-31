@@ -1,0 +1,14 @@
+.scrollUp{
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 60px;
+    right: 120px;
+    img{
+        width: 100%;
+    }
+    &-active{
+        display: block;
+    }
+}

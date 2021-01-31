@@ -1,0 +1,22 @@
+@import "slick";
+@import "fonts";
+@import "nullstyle";
+@import "variables";
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@import "blocks/promo";
+@import "blocks/works";
+@import "blocks/galery";
+@import "blocks/footer";
+@import "blocks/popUpcallback";
+@import "blocks/scrollUpbtn";

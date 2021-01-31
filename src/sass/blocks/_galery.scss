@@ -1,0 +1,149 @@
+.galery{
+    padding: 85px 0 148px 0;
+    &-title{
+        color: #993333;
+    }
+    &-slider{
+        margin-top: 65px;
+    }
+}
+
+.slider-nav__item,
+.main-slider__item{
+    cursor: pointer;
+}
+
+.slider-nav .slick-list .slick-track{
+    height: 172px;
+}
+
+.slider-nav__item{
+    overflow: hidden;
+    // width: 262px;
+    //  height: 172px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    text-align: center;
+}
+.slider-nav__item img{
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    // width: auto;
+    width: 100%;
+    height: 100%;
+}
+.main-slider__item img{
+    max-height: 740px;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+// Слайдер
+// .slick-slader{
+// }
+
+.slider-nav{
+    margin-top: 45px;
+}
+.slider-nav ul.slick-dots{
+    margin-top: 30px;
+}
+
+.slider-nav button.slick-prev.slick-arrow,
+button.slick-next.slick-arrow
+{
+    font-size: 0;
+}
+
+.slick-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 262px;
+    padding: 0 15px;
+}
+
+// Ограничивающая оболочка
+.slick-list{
+    overflow: hidden;
+    min-width: 0px;
+}
+
+// Лента слайдов
+.slick-track{
+    display: flex;
+    min-width: 0px;
+}
+
+
+// Слайд
+.slick-slide{
+    min-width: 0px;
+}
+// Слайд активный
+// .slick-slide.slick-active{}
+// Слайд основной
+// .slick-slide.slick-current{}
+// Слайд по центру
+// .slick-slide.slick-centre{}
+
+
+// Стрелка
+// .slick-arrow{}
+// Стрелка влево
+button.slick-arrow{
+    font-size: 0;
+}
+
+.main-slider button.slick-prev,
+.main-slider button.slick-next{
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    width: 28px;
+    height: 47px;
+    background: url(../img/slider/right-arrow.svg) center center/cover no-repeat;
+}
+
+.main-slider button.slick-prev{
+    left: -35px;
+    transform: rotate(180deg);
+}
+// Стрелка вправа
+.main-slider button.slick-next{
+    right: -35px;
+    z-index: 5;
+}
+// Стрелка не активная
+// .slick-arrow.slick-disabled{}
+
+// Точки
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-dots li{
+    margin: 0 3px;
+}
+.slick-dots button{
+    font-size: 0px;
+    width: 10px;
+    height: 10px;
+    background: $btnRed;
+    border-radius: 50%;
+    transition: all .5s ease-out;
+}
+
+.slick-active button{
+    background-color: #ffffff;
+    border: 1px solid $btnRed
+}
+
+// Конкретный слайдер
+// .slider{}
